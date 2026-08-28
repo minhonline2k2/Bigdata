@@ -10,11 +10,6 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-/**
- * Bai 11: Dem tong so dong code trong mot thu muc chua nhieu file ma nguon.
- * Map phat ra ("total_lines", 1) cho moi dong; Reduce cong don lai.
- * Bo qua cac dong trong (chi chua khoang trang).
- */
 public class LineCount {
 
     public static class LineMapper
@@ -25,7 +20,7 @@ public class LineCount {
 
         public void map(LongWritable key, Text value, Context context)
                 throws IOException, InterruptedException {
-            // Chi dem dong khong rong (bo dong chi co khoang trang)
+
             if (value.toString().trim().length() > 0) {
                 context.write(keyWord, one);
             }

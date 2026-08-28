@@ -11,12 +11,10 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
 
-/**
- * Bai 1: WordCount - dem so lan xuat hien cua moi tu trong file van ban.
- */
+
 public class WordCount {
 
-    // MAP: tach dong thanh tung tu, phat ra (tu, 1)
+
     public static class TokenizerMapper
             extends Mapper<Object, Text, Text, IntWritable> {
 
@@ -33,7 +31,7 @@ public class WordCount {
         }
     }
 
-    // REDUCE: cong don so lan xuat hien cua tung tu
+
     public static class IntSumReducer
             extends Reducer<Text, IntWritable, Text, IntWritable> {
 

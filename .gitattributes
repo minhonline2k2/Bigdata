@@ -1,7 +1,3 @@
-# Chuan hoa dong dong: file text luu LF trong repo
 * text=auto
-
-# Cac file NAY BAT BUOC LF o moi may (chay trong Linux container).
-# Neu bi CRLF, bash trong container se bao loi "\r": khong chay duoc.
 *.sh        text eol=lf
 Dockerfile  text eol=lf
