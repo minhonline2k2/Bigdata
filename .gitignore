@@ -1,0 +1,15 @@
+# File tu sinh khi chay - khong dua len repo
+build/
+output/
+
+# Artifact bien dich / dong goi
+*.class
+*.jar
+hadoop.tar
+*.tar
+
+# Rac cua he dieu hanh / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

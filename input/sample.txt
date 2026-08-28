@@ -1,0 +1,4 @@
+hello world hello hadoop
+big data big data mapreduce
+hadoop mapreduce word count
+hello big data world
